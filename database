@@ -29,6 +29,8 @@ b2c_order  display_id
 供应商信息表(b2c_supplier_info)
 产品信息表 (b2c_product_summary)
 产品分类报价(b2c_product_ticket_price) 
+订单(b2c_order)
+
 
 
 
