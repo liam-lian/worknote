@@ -1,0 +1,25 @@
+# tts beta
+l-db1.tkt.beta.cn0.qunar.com:5433:b2c_product:menpiao_beta:68a8c01c-6416-46ac-82f8-08f982ab7caa
+
+# product beta
+l-db1.tkt.beta.cn0.qunar.com:5433:b2c_product2:menpiao_beta:68a8c01c-6416-46ac-82f8-08f982ab7caa
+
+Product beta:
+select * from b2c_dataagent_supplier where adapter_supplier_address  = 'piaozaiLvtuService';
+
+tts beta:
+select * from b2c_order where display_id='161158771853000000';
+select * from order_product_info where supplier_system_identity = 'piaozailvtu';
+
+select * from b2c_product_summary summ
+left join product prod on summ.id = prod.goodsinfo_id
+
+
+select * from product where goodsinfo_id='9113445';
+
+select * from b2c_product_summary where id = '9113445';
+
+
+b2c_ticket_order=== 第三方供应商和本地的供应商之间(订单号)的映射表
+
+
