@@ -1,1 +1,6 @@
 1. agent-core/router实现了和供应商交互的接口  
+
+2. adapter
+--- 接受第三方的消息是通过controller暴露接口
+--- 发送数据给第三方是通过实现IAdapterService接口。发送数据是通过Builder来发送的，
+    Builder主要进行签名的生成之后通过HttpClient直接发送就可以了

@@ -19,7 +19,16 @@ select * from product where goodsinfo_id='9113445';
 
 select * from b2c_product_summary where id = '9113445';
 
+resource_id 供应商产品id
+display_id  qunar的订单号
 
 b2c_ticket_order=== 第三方供应商和本地的供应商之间(订单号)的映射表
+b2c_product_summart 就是产品的详细信息
+b2c_order  display_id
+
+供应商信息表(b2c_supplier_info)
+产品信息表 (b2c_product_summary)
+产品分类报价(b2c_product_ticket_price) 
+
 
 
