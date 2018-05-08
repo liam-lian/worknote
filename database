@@ -32,5 +32,12 @@ b2c_order  display_id
 订单(b2c_order)
 
 
+# 详细的订单信息表
+# id 主键(tts内部使用)
+# display_id (展示给外部系统的订单号)
+# product_id
+
+
+连表，通过oid进行连接
 
 
