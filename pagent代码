@@ -4,3 +4,15 @@
 --- 接受第三方的消息是通过controller暴露接口
 --- 发送数据给第三方是通过实现IAdapterService接口。发送数据是通过Builder来发送的，
     Builder主要进行签名的生成之后通过HttpClient直接发送就可以了
+
+3. 使用了很多的配置文件
+例如： ConfigConstant里面有很多的常量，都是通过配置文件注入的方式进行赋值的
+       Congfig通过读取ConfigConstant中的常量，将各种变量向外面暴露
+
+4. agent-apgent/SupplierApiController.java是pagent向supplier暴露的接口
+
+    1. 验证安全/获得请求   验证安全会查看是否有关联的供应商/校验IP地址/校验签名
+    2. 找到相应的service进行处理
+    3. 返回结果
+5. 对于每一种的消息都有request和response的封装
+
